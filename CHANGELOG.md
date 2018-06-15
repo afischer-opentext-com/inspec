@@ -1,12 +1,134 @@
 # Change Log
 <!-- usage documentation: http://expeditor-docs.es.chef.io/configuration/changelog/ -->
-<!-- latest_release -->
+<!-- latest_release 2.2.15 -->
+## [v2.2.15](https://github.com/inspec/inspec/tree/v2.2.15) (2018-06-14)
+
+#### Merged Pull Requests
+- Bump train version for inspec [#3147](https://github.com/inspec/inspec/pull/3147) ([jquick](https://github.com/jquick))
 <!-- latest_release -->
 
-<!-- release_rollup -->
+<!-- release_rollup since=2.2.10 -->
+### Changes since 2.2.10 release
+
+#### Enhancements
+- Fix unit tests for ruby 2.5 [#3125](https://github.com/inspec/inspec/pull/3125) ([jquick](https://github.com/jquick)) <!-- 2.2.12 -->
+
+#### Merged Pull Requests
+- Bump train version for inspec [#3147](https://github.com/inspec/inspec/pull/3147) ([jquick](https://github.com/jquick)) <!-- 2.2.15 -->
+- Add insecure option to the automate report json [#3124](https://github.com/inspec/inspec/pull/3124) ([jquick](https://github.com/jquick)) <!-- 2.2.14 -->
+- Add list properties back to shadow [#3140](https://github.com/inspec/inspec/pull/3140) ([clintoncwolfe](https://github.com/clintoncwolfe)) <!-- 2.2.13 -->
+- Translate `auditd -s` RHEL output to match CentOS [#3114](https://github.com/inspec/inspec/pull/3114) ([jerryaldrichiii](https://github.com/jerryaldrichiii)) <!-- 2.2.11 -->
 <!-- release_rollup -->
 
 <!-- latest_stable_release -->
+## [v2.2.10](https://github.com/inspec/inspec/tree/v2.2.10) (2018-06-08)
+
+#### New Resources
+- Adds a aws_flow_log resource with unit and integration testing. [#2906](https://github.com/inspec/inspec/pull/2906) ([miah](https://github.com/miah))
+- Add aws_elb and aws_elbs resources [#3079](https://github.com/inspec/inspec/pull/3079) ([clintoncwolfe](https://github.com/clintoncwolfe))
+
+#### Enhancements
+- Detect windows packages with trailing/leading spaces [#3106](https://github.com/inspec/inspec/pull/3106) ([jquick](https://github.com/jquick))
+- Add common methods to FilterTable [#3104](https://github.com/inspec/inspec/pull/3104) ([clintoncwolfe](https://github.com/clintoncwolfe))
+- Allow custom resources to access all other resources [#3108](https://github.com/inspec/inspec/pull/3108) ([jquick](https://github.com/jquick))
+
+#### Bug Fixes
+- Two fixes to FilterTable `where` criteria handling [#3045](https://github.com/inspec/inspec/pull/3045) ([clintoncwolfe](https://github.com/clintoncwolfe))
+- Update documentation for shadow resource. [#3042](https://github.com/inspec/inspec/pull/3042) ([miah](https://github.com/miah))
+
+#### Merged Pull Requests
+- support local npm package searches [#3105](https://github.com/inspec/inspec/pull/3105) ([arlimus](https://github.com/arlimus))
+- Spellcheck FilterTable Developer Documentation [#3111](https://github.com/inspec/inspec/pull/3111) ([jerryaldrichiii](https://github.com/jerryaldrichiii))
+- Refactor: Perform internal rename and add comments to FilterTable [#3047](https://github.com/inspec/inspec/pull/3047) ([clintoncwolfe](https://github.com/clintoncwolfe))
+- Add lazy-loading to FilterTable [#3093](https://github.com/inspec/inspec/pull/3093) ([clintoncwolfe](https://github.com/clintoncwolfe))
+- Update Junit.rb to add failures attribute [#3086](https://github.com/inspec/inspec/pull/3086) ([scboucher](https://github.com/scboucher))
+- Clean up issues in documentation [#3058](https://github.com/inspec/inspec/pull/3058) ([miah](https://github.com/miah))
+<!-- latest_stable_release -->
+
+## [v2.1.84](https://github.com/inspec/inspec/tree/v2.1.84) (2018-05-31)
+
+#### Merged Pull Requests
+- Generate new org builds [#3087](https://github.com/inspec/inspec/pull/3087) ([jquick](https://github.com/jquick))
+
+## [v2.1.83](https://github.com/chef/inspec/tree/v2.1.83) (2018-05-18)
+
+#### Merged Pull Requests
+- Update ruby required version. [#3070](https://github.com/chef/inspec/pull/3070) ([jquick](https://github.com/jquick))
+- Test new gem builds [#3071](https://github.com/chef/inspec/pull/3071) ([jquick](https://github.com/jquick))
+
+## [v2.1.81](https://github.com/chef/inspec/tree/v2.1.81) (2018-05-17)
+
+#### Merged Pull Requests
+- Update Train pin to pull in msi env [#3068](https://github.com/chef/inspec/pull/3068) ([jquick](https://github.com/jquick))
+
+## [v2.1.80](https://github.com/chef/inspec/tree/v2.1.80) (2018-05-17)
+
+#### Merged Pull Requests
+- Add job_uuid passthrough for automate report [#3064](https://github.com/chef/inspec/pull/3064) ([jquick](https://github.com/jquick))
+- Bump train pin [#3065](https://github.com/chef/inspec/pull/3065) ([jquick](https://github.com/jquick))
+
+## [v2.1.78](https://github.com/chef/inspec/tree/v2.1.78) (2018-05-16)
+
+#### Bug Fixes
+- Fix matcher output when the args to the matcher are a hash for two resources [#3044](https://github.com/chef/inspec/pull/3044) ([clintoncwolfe](https://github.com/clintoncwolfe))
+
+#### Merged Pull Requests
+- Updating Copy To Clipboard for ruby users InSpec installation command [#3054](https://github.com/chef/inspec/pull/3054) ([subramani95](https://github.com/subramani95))
+- Add a passthrough for report_uuid [#3057](https://github.com/chef/inspec/pull/3057) ([jquick](https://github.com/jquick))
+- Fix www build for node v10 [#3049](https://github.com/chef/inspec/pull/3049) ([miah](https://github.com/miah))
+- Add train GCP transport [#3046](https://github.com/chef/inspec/pull/3046) ([jquick](https://github.com/jquick))
+- Adds middleware dependecy for Azure [#3061](https://github.com/chef/inspec/pull/3061) ([dmccown](https://github.com/dmccown))
+
+## [v2.1.72](https://github.com/chef/inspec/tree/v2.1.72) (2018-05-10)
+
+#### New Resources
+- Skeletal aws_ec2_instances resource [#3023](https://github.com/chef/inspec/pull/3023) ([clintoncwolfe](https://github.com/clintoncwolfe))
+
+#### Enhancements
+- Add git dependency to habitat plan. [#3037](https://github.com/chef/inspec/pull/3037) ([phiggins](https://github.com/phiggins))
+
+#### Bug Fixes
+- Allow the depends key to be exposed in json profiles report [#3033](https://github.com/chef/inspec/pull/3033) ([jquick](https://github.com/jquick))
+
+#### Merged Pull Requests
+- Fix typo in os_env_spec [#3028](https://github.com/chef/inspec/pull/3028) ([Happycoil](https://github.com/Happycoil))
+
+## [v2.1.68](https://github.com/chef/inspec/tree/v2.1.68) (2018-05-04)
+
+#### Merged Pull Requests
+- Fix the A2 vendoring with depends on the A2 server [#3022](https://github.com/chef/inspec/pull/3022) ([jquick](https://github.com/jquick))
+
+## [v2.1.67](https://github.com/chef/inspec/tree/v2.1.67) (2018-05-03)
+
+#### New Features
+-  #2810 - Add check if aws s3 bucket is encrypted. [#2937](https://github.com/chef/inspec/pull/2937) ([UranusBytes](https://github.com/UranusBytes))
+
+#### Enhancements
+- Refactors Terraform plan to break out steps [#2996](https://github.com/chef/inspec/pull/2996) ([dmccown](https://github.com/dmccown))
+- Split inspec into a core gem. [#3008](https://github.com/chef/inspec/pull/3008) ([miah](https://github.com/miah))
+
+#### Bug Fixes
+- nginx_conf resource: Fix include paths with quotes [#2726](https://github.com/chef/inspec/pull/2726) ([jerryaldrichiii](https://github.com/jerryaldrichiii))
+- Add A2 support for profile compliance depends [#3014](https://github.com/chef/inspec/pull/3014) ([jquick](https://github.com/jquick))
+
+#### Merged Pull Requests
+- Update Habitat plan [#3000](https://github.com/chef/inspec/pull/3000) ([jerryaldrichiii](https://github.com/jerryaldrichiii))
+- cmp should recognise a string being a negative int [#3007](https://github.com/chef/inspec/pull/3007) ([james-stocks](https://github.com/james-stocks))
+- Add inspec-core gem to expeditor release [#3018](https://github.com/chef/inspec/pull/3018) ([jquick](https://github.com/jquick))
+
+## [v2.1.59](https://github.com/chef/inspec/tree/v2.1.59) (2018-04-26)
+
+#### Enhancements
+- Update shadow#to_s to return @path instead of hardcoded `/etc/shadow` [#2978](https://github.com/chef/inspec/pull/2978) ([miah](https://github.com/miah))
+
+#### Bug Fixes
+- Catch exceptions in control blocks and fail the control [#2987](https://github.com/chef/inspec/pull/2987) ([clintoncwolfe](https://github.com/clintoncwolfe))
+
+#### Merged Pull Requests
+- Makes JSON resource enumerable, despite method_missing magic [#2910](https://github.com/chef/inspec/pull/2910) ([TheLonelyGhost](https://github.com/TheLonelyGhost))
+- Fix case where res is nil in etc_group [#2984](https://github.com/chef/inspec/pull/2984) ([chris-rock](https://github.com/chris-rock))
+- os_env resource returns only user&#39;s environment variable on Windows [#2945](https://github.com/chef/inspec/pull/2945) ([omar-irizarry](https://github.com/omar-irizarry))
+
 ## [v2.1.54](https://github.com/chef/inspec/tree/v2.1.54) (2018-04-19)
 
 #### New Features
@@ -27,7 +149,6 @@
 
 #### Merged Pull Requests
 - Add A2 support to the inspec-compliance toolset [#2963](https://github.com/chef/inspec/pull/2963) ([jquick](https://github.com/jquick))
-<!-- latest_stable_release -->
 
 ## [v2.1.43](https://github.com/chef/inspec/tree/v2.1.43) (2018-04-12)
 

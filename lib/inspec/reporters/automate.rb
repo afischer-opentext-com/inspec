@@ -8,6 +8,9 @@ module Inspec::Reporters
     def initialize(config)
       super(config)
 
+      # allow the insecure flag
+      @config['verify_ssl'] = !@config['insecure'] if @config.key?('insecure')
+
       # default to not verifying ssl for sending reports
       @config['verify_ssl'] = @config['verify_ssl'] || false
     end
@@ -23,10 +26,10 @@ module Inspec::Reporters
       final_report[:node_uuid] = @config['node_uuid'] || @run_data[:platform][:uuid]
       raise Inspec::ReporterError, 'Cannot find a UUID for your node. Please specify one via json-config.' if final_report[:node_uuid].nil?
 
-      final_report[:report_uuid] = uuid_from_string(final_report[:end_time] + final_report[:node_uuid])
+      final_report[:report_uuid] = @config['report_uuid'] || uuid_from_string(final_report[:end_time] + final_report[:node_uuid])
 
       # optional json-config passthrough options
-      %w{node_name environment roles recipies}.each do |option|
+      %w{node_name environment roles recipies job_uuid}.each do |option|
         final_report[option.to_sym] = @config[option] unless @config[option].nil?
       end
       final_report

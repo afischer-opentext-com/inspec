@@ -46,7 +46,7 @@ inspec exec test.rb -t docker://container_id
 
 ## Installation
 
-InSpec requires Ruby ( >1.9 ).
+InSpec requires Ruby ( >2.2 ).
 
 ### Install as package
 
@@ -424,6 +424,12 @@ Use the rake task `bundle exec rake test:aws` to test the AWS resources against 
 
 Please see [TESTING_AGAINST_AWS.md](./test/integration/aws/TESTING_AGAINST_AWS.md) for details on how to setup the needed AWS accounts to perform testing.
 
+### Azure Tests
+
+Use the rake task `bundle exec rake test:azure` to test the Azure resources against an Azure account.
+
+Please see [TESTING_AGAINST_AZURE.md](./test/integration/aws/TESTING_AGAINST_AZURE.md) for details on how to setup the needed Azure accounts to perform testing.
+
 ## License
 
 |                |                                           |
@@ -444,4 +450,5 @@ Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
-limitations under the License.
+limitations under the License. 
+ 

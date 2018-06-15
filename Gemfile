@@ -1,6 +1,6 @@
 # encoding: utf-8
 source 'https://rubygems.org'
-gemspec
+gemspec name: 'inspec'
 
 if Gem::Version.new(RUBY_VERSION) < Gem::Version.new('2.2.2')
   gem 'json', '~> 1.8'
@@ -27,7 +27,7 @@ group :test do
 end
 
 group :integration do
-  gem 'berkshelf', '~> 4.3'
+  gem 'berkshelf', '~> 5.2'
   gem 'test-kitchen', '~> 1.6'
   gem 'kitchen-vagrant'
   # we need winrm v2 support >= 0.15.1
